@@ -19,7 +19,7 @@ public class GameService {
     private GameRepository gameRepository;
 
     @Transactional(readOnly = true)
-    public GameDTO findById(@PathVariable Long id){
+    public GameDTO findBYId(Long id){
         Game result = gameRepository.findById(id).get();
         return new GameDTO(result);
     }
