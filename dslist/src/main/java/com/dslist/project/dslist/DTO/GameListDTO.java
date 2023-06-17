@@ -5,10 +5,11 @@ import com.dslist.project.dslist.entities.GameList;
 
 public class GameListDTO {
 
-    private final Long id;
-    private final String name;
+    private  Long id;
+    private  String name;
 
 
+    public GameListDTO(){}
     public GameListDTO(GameList entity){
         id = entity.getId();
         name = entity.getName();
